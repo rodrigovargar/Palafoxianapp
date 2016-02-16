@@ -1,0 +1,24 @@
+@font-face {
+ font-family: restraint;
+ src: url('../img/fonts/Restraint.otf'); 
+ }
+ h1{font-weight:normal;}
+.titulo{font-family: restraint;font-size:55px;text-align:center;color:#333B55;}
+.subtitulo{font-family: 'Petit Formal Script', cursive;font-size:40px;text-align:center;color:#333B55;}
+.parrafo{font-family: 'Droid Sans';font-size:18px;text-align:left;padding:0 10%;z-index:30;}
+.capital{display: block;float: left;font-size: 72px;margin: -10px 2px;height:1em;}
+.quote{font-family: 'PT Serif', serif;font-size:14px;text-align:right;padding:0 ;float:right;}
+.texto_esp{width:60%; margin-top:50px;font-family: 'PT Serif', serif;font-size:18px;color:#6D9AC0;padding:0 ;float:right;}
+.dia{color:#333B55;z-index:20;position:relative;}
+.noche{color:#efffff;z-index:10;position:absolute;}
+.p1{display:block;width:60%;float:left; margin-top:50px;}
+.p2{display:block;width:60%;float:right; margin-top:50px;margin-right:}
+.fondo1{z-index:1;position:absolute;left:0;top:%10;opacity:0.5}
+.dragacti3{margin-left:1%;width:15.5%;float:left;z-index:100;position:relative;}
+.dragacti4{margin-left:1%;width:15.5%;float:left;z-index:100;position:relative;display:block;height:150px;}
+.dragacti4 img{max-height:150px;}
+.dropacti3{width:25%; position:relative;z-index:15;display:inline-cell;float:left;}
+ul{display:block;width:200px;margin:0 auto;}
+li{text-align:left;list-style:none;font-size:30px;}
+a{color:#333B55;}
+.versalitas{font-variant: small-caps;font-size:20px;}

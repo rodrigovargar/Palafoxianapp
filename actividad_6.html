@@ -1,0 +1,101 @@
+<div style='display:block;background-color:#fff;'>
+	<img id='back_st'src='img/origen/fondoa.png' style='width:100%;position:absolute;z-index:1;margin-top:-3%;display:block;'>
+	<img id='back_st'src='img/libros/estanteria.png' style='width:100%;position:absolute;z-index:1;margin-top:-3%;display:block;'>
+	<div class='estantero' style='width:100%;display:inline-table;'>
+		<div class='droppable ciencias dropacti3' rel='ciencias' style='margin-top:17%;margin-left:13%;'><img src='img/libros/guia.png' style='width:100%'/></div>
+		<div class='droppable ciencias dropacti3' rel='ciencias' style='margin-top:17%;'><img src='img/libros/guia.png' style='width:100%'/></div>
+		<div class='droppable ciencias dropacti3' rel='ciencias' style='margin-top:17%;'><img src='img/libros/guia.png' style='width:100%'/></div>
+		<br/>
+		<div class='droppable ciencias dropacti3' rel='ciencias' style='margin-top:1%;margin-left:13%;'><img src='img/libros/guia.png' style='width:100%'/></div>
+		<div class='droppable ciencias dropacti3' rel='ciencias' style='margin-top:1%;'><img src='img/libros/guia.png' style='width:100%'/></div>
+		<div class='droppable ciencias dropacti3' rel='ciencias' style='margin-top:1%;'><img src='img/libros/guia.png' style='width:100%'/></div>
+		<br/>
+		<div class='droppable iglesia dropacti3' rel='iglesia' style='margin-top:4%;margin-left:13%;'><img src='img/libros/guia.png' style='width:100%'/></div>
+		<div class='droppable iglesia dropacti3' rel='iglesia' style='margin-top:4%;'><img src='img/libros/guia.png' style='width:100%'/></div>
+		<div class='droppable iglesia dropacti3' rel='iglesia' style='margin-top:4%;'><img src='img/libros/guia.png' style='width:100%'/></div>
+		<br/>
+		<div class='droppable iglesia dropacti3' rel='iglesia' style='margin-top:2%;margin-left:13%;'><img src='img/libros/guia.png' style='width:100%'/></div>
+		<div class='droppable iglesia dropacti3' rel='iglesia' style='margin-top:2%;'><img src='img/libros/guia.png' style='width:100%'/></div>
+		<div class='droppable iglesia dropacti3' rel='iglesia' style='margin-top:2%;'><img src='img/libros/guia.png' style='width:100%'/></div>
+		<br/>
+		<div style='width:82%; position:relative;z-index:15;margin-top:6%;display:inline-cell;float:left;'><img src='img/libros/guia2.png' style='width:100%'/></div>
+	</div>
+	<br/>
+	<div id='cont_piezas' style="width:100%;float:left;display:block;height:150px;display:block;">
+		<img id='back_st'src='img/origen/menu-dorado.png' style='width:100%;position:absolute;z-index:10;margin-top:-3%;'>
+		<div class='draggable ciencias dragacti3'>
+			<img style='width:100%' src='img/libros/ciencias1.png'/>
+		</div>
+		<div class='draggable ciencias dragacti3'>
+			<img style='width:100%' src='img/libros/ciencias2.png'/>
+		</div>
+		<div class='draggable iglesia dragacti3'>
+			<img style='width:100%' src='img/libros/iglesia1.png'/>
+		</div>	
+		<div class='draggable ciencias dragacti3'>
+			<img style='width:100%' src='img/libros/ciencias3.png'/>
+		</div>
+		<div class='draggable iglesia dragacti3'>
+			<img style='width:100%' src='img/libros/iglesia2.png'/>
+		</div>
+		<div class='draggable iglesia dragacti3'>
+			<img style='width:100%' src='img/libros/iglesia3.png'/>
+		</div>
+		<div class='draggable ciencias dragacti3'>
+			<img style='width:100%' src='img/libros/ciencias4.png'/>
+		</div>
+		<div class='draggable ciencias dragacti3'>
+			<img style='width:100%' src='img/libros/ciencias5.png'/>
+		</div>
+		<div class='draggable iglesia dragacti3'>
+			<img style='width:100%' src='img/libros/iglesia4.png'/>
+		</div>	
+		<div class='draggable ciencias dragacti3'>
+			<img style='width:100%' src='img/libros/ciencias6.png'/>
+		</div>
+		<div class='draggable iglesia dragacti3'>
+			<img style='width:100%' src='img/libros/iglesia5.png'/>
+		</div>
+		<div class='draggable iglesia dragacti3'>
+			<img style='width:100%' src='img/libros/iglesia6.png'/>
+		</div>
+	</div>
+</div>
+<br/>
+<script type='text/javascript'>
+	var correctas=0;
+	texto_es="La estantería del recinto es uno de los mejores trabajos de ebanistería del periodo virreinal mexicano, mide 90 metros de longitud y 7.5 de altura, está conformada por columnas, barandal y remates. También destacan los detalles orgánicos en las puertas de entrada que conviven con los escudos de Palafox finamente tallados. <br /><br /> Los 2 primeros niveles de estantería los mandó construir el obispo Francisco Fabián y Fuero en 1773, el tercero se construyó en el <font class='versalitas'>siglo xix</font> bajo el mando del obispo Francisco Pablo Vázquez, para lo cual se respetó la estructura y estilo originales.";
+	texto_en="The bookshelves in the library are one of the best samples of woodworking from the Mexican vice regal period, they measure 90 meters in length and 7.5 meters in height and are composed of columns, railings and finials. Also of note are the organic details on the main doors that coexist with the finely carved Palafox coat of arms.<br/><br/>The first two levels of the bookshelves were made under the orders of Bishop Francisco Fabian y Fuero in 1773. The third level was built in the nineteenth century commissioned by Bishop Francisco Pablo Vázquez, and the original structure and style was respected.";
+	$( ".draggable" ).draggable({
+		revert:true,
+		}
+	);
+	
+	$(".droppable").each(function(){
+		$(this).droppable({
+			accept:"."+$(this).attr("rel"),
+			drop:function(event,ui){
+				$(this).html(ui.draggable.html());
+				correctas++;
+				if(correctas==12)
+				{
+					if(lan=="es")
+					{
+						texto=texto_es;
+					}
+					else
+					{
+						texto=texto_en;
+					}
+					$("#mensaje").html("<img src='img/ui/tarjetas.png' style='width:100%;position:absolute;z-index:20002'/><img src='img/ui/actividad_completada.png' style='width:100%;position:relative;z-index:20003;magin-top:30%;'/><br><p style='width:80%;margin-top:200px;left:10%;position:relative;z-index:20003;text-align:center;'>"+texto+"</p>");
+					$(".mensaje").show();
+					
+				}
+				ui.draggable.detach();
+				$(this).droppable( "option", "disabled", true );
+				
+				},
+      
+    });
+    });
+</script>
